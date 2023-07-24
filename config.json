@@ -1,6 +1,6 @@
 [
     {
-        "type": "command",
+        "type": "command2",
         "command": [
             "mongodump",
             "-d",
@@ -11,7 +11,7 @@
     },
     {
         "type": "replicate",
-        "from": "/home/brad/Downloads/f/f",
-        "to": "/home/brad/Downloads/f/t"
+        "from": "/run/user/1000/gvfs/smb-share:server=raid.local,share=www/flixbox",
+        "to": "/media/brad/D1/server"
     }
 ]

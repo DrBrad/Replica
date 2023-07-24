@@ -45,7 +45,6 @@ public class Replicate extends Replica {
 
             if(t.exists()){
                 if(f.length() != t.length()){
-                    System.err.println("B");
                     try{
                         copyFile(f, t);
                     }catch(IOException e){
@@ -56,7 +55,6 @@ public class Replicate extends Replica {
 
                 try{
                     if(!getFileChecksum(f).equals(getFileChecksum(t))){
-                        System.err.println("A");
                         copyFile(f, t);
                     }
                 }catch(NoSuchAlgorithmException | IOException e){
@@ -65,7 +63,6 @@ public class Replicate extends Replica {
 
             }else{
                 try{
-                    System.err.println("C");
                     copyFile(f, t);
                 }catch(IOException e){
                     e.printStackTrace();

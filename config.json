@@ -1,0 +1,17 @@
+[
+    {
+        "type": "command",
+        "command": [
+            "mongodump",
+            "-d",
+            "flixbox",
+            "-o",
+            "/home/brad/Downloads/f/t"
+        ]
+    },
+    {
+        "type": "replicate",
+        "from": "/home/brad/Downloads/f/f",
+        "to": "/home/brad/Downloads/f/t"
+    }
+]

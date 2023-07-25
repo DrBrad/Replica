@@ -50,9 +50,10 @@ public class Replicate extends Replica {
                     }catch(IOException e){
                         e.printStackTrace();
                     }
-                    continue;
+                    //continue;
                 }
 
+                /*
                 try{
                     if(!getFileChecksum(f).equals(getFileChecksum(t))){
                         copyFile(f, t);
@@ -60,6 +61,7 @@ public class Replicate extends Replica {
                 }catch(NoSuchAlgorithmException | IOException e){
                     e.printStackTrace();
                 }
+                */
 
             }else{
                 try{
